@@ -24,6 +24,7 @@
     --accent-color: #2196F3;
     --black-color: #000000;
     --white-color: #FFFFFF;
+    --icons-color: #AFB1B8;
 }
 
 /* Body */
@@ -167,6 +168,11 @@ img {
 }
 
 .header-action {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+
     color: var(--text-color);
 }
 
@@ -332,6 +338,8 @@ img {
     letter-spacing: 0.03em;
     font-weight: 400;
     text-align: center;
+
+    margin-bottom: 16px;
 }
 
 /* Footer */
@@ -340,6 +348,12 @@ img {
     padding-bottom: 60px;
 
     background-color: var(--accent-background-color);
+}
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
 }
 
 .footer-logo {
@@ -384,6 +398,20 @@ img {
     margin-bottom: 9px;
 }
 
+.footer-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+
+    margin-bottom: 20px;
+}
+
 /* PORTFOLIO */
 /* Main section */
 
@@ -420,6 +448,7 @@ img {
 .project-btn:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Projects */
@@ -427,6 +456,11 @@ img {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-wrapper {
@@ -454,3 +488,85 @@ img {
     letter-spacing: 0.03em;
     font-weight: 400;
 }
+
+/* Socials icons */
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    color: var(--icons-color);
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+
+.socials-icon {
+    fill: currentColor;
+}
+
+.socials-link:hover,
+.socials-link:focus,
+.socials-footer-link:hover,
+.socials-footer-link:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+
+/* спосіб з вказанням fill для іконки */
+/* .socials-icon {
+    fill: var(--icons-color);
+} 
+.socials-link:hover {
+    background-color: var(--accent-color);
+}
+
+.socials-link:hover .socials-icon {
+    fill: var(--white-color);
+} */
+
+/* Header icons */
+.header-icon {
+    fill: currentColor;
+}
+
+/* Footer icons */
+
+.socials-footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 44px;
+    height: 44px;
+
+    color: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-footer-icon {
+    fill: currentColor;
+}
+
+.socials-footer-link:hover,
+.socials-footer-link:focus
+
+/* Features icons */
+.features-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
